@@ -62,10 +62,4 @@ end
 
 set -gx __fish_initialized 1
 
-set -gx RBENV_ROOT ~/.rbenv
-append-to-path ~/.rbenv/bin
-. (rbenv init -|psub)
-
-nvm > /dev/null
-eval (python -m virtualfish)
 eval (direnv hook fish)
